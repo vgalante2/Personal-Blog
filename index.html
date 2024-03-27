@@ -10,6 +10,7 @@
     <header>
         <nav>
             <h1> Day/Night</h1>
+            <a href="blog.html">Blogs</a>
         </nav>
     </header>
     <main>
@@ -20,14 +21,16 @@
         </section>
         <section class="form-section">
             <h1>Whats on your mind?</h1>
-            <form>
-            <label>First Name:</label>
-            <input type="text" id="'fname" name="fname">
-            <label>Last Name:</label>
-            <input type="text" id="'lname" name="lname">
+            <form id="form">
+            <label>Name:</label>
+            <input type="text" id="'name" name="name" >
+            <label>Title:</label>
+            <input type="text" id="'title" name="title" >
             <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+            <input type="submit" value="Submit">
             </form>
         </section>
     </main>
+    <script src="./Assets/js/form.js"></script>
 </body>
 </html>
