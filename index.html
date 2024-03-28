@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <h1> Day/Night</h1>
+            <button id="darkModeSwitch" > Day/Night</button>
             <a href="blog.html">Blogs</a>
         </nav>
     </header>
@@ -23,14 +23,15 @@
             <h1>Whats on your mind?</h1>
             <form id="form">
             <label>Name:</label>
-            <input type="text" id="'name" name="name" >
+            <input type="text" id="'name" name="name" autocomplete="off">
             <label>Title:</label>
-            <input type="text" id="'title" name="title" >
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+            <input type="text" id="'title" name="title" autocomplete="off">
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..." autocomplete="off"></textarea >
             <input type="submit" value="Submit">
             </form>
         </section>
     </main>
     <script src="./Assets/js/form.js"></script>
+    <script src="./Assets/js/logic.js"></script>
 </body>
 </html>

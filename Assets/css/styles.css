@@ -2,6 +2,10 @@
 
 /* GLOBAL / VARIABLES */
 
+:root {
+    --main-blue-color: #3498db;
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +33,10 @@ header nav {
  padding: 1rem 1rem;
 }
 
-
+a {
+    color: var(--main-blue-color);
+    text-decoration: none;
+}
 
 
 /* MAIN SECTION */
@@ -61,7 +68,7 @@ main {
   width: 70%;
   height: 60%;
   border-radius: 50%;
-  background-color: #3498db;
+  background-color: var(--main-blue-color);
   border: 3px solid #000000;
   display: flex;
   align-items: center;
@@ -96,6 +103,7 @@ form {
   
 }
 
+/* Form Heading */
 section h1 {
     margin-bottom: 30px;
     font-size: 2rem;
@@ -103,6 +111,24 @@ section h1 {
 
 form label {
     font-size: 1.5rem;
+}
+
+form input {
+    width: 100%;
+
+}
+
+form input[type="submit"] {
+    background-color: var(--main-blue-color);
+    color: white;
+}
+
+
+.dark {
+    background-color: rgb(28, 28, 28);
+    color: rgb(202, 202, 202);
+    transition: 1s ease-in-out;
+    
 }
 
 

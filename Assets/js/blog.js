@@ -49,9 +49,9 @@ function outputPosts() {
     // Insert HTML into the friendsOutput UL at the inside end(beforeend)
     formOutput.insertAdjacentHTML('beforeend', `
       <li class="row align-center">
-        <p>${blogPost.name}</p>
-        <p>${blogPost.title}</p>
-        <p>${blogPost.message}</p>
+        <h1>${blogPost.title}</h1>
+        <h2>${blogPost.message}</h2>
+        <p>Author: ${blogPost.name}</p>
         <button class="delete-btn">Delete</button>
       </li>
     `)
@@ -71,4 +71,13 @@ document.body.addEventListener('click', function (eventObj) {
     removePost(el)
   }
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeStatus = localStorage.getItem('darkMode');
+  if (darkModeStatus === 'enabled') {
+      document.body.classList.add('dark');
+  } else {
+      document.body.classList.remove('dark');
+  }
+});
 
