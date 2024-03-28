@@ -21,9 +21,7 @@ body {
 /* HEADER + NAV  */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  
     width: 100%;
     border-bottom: 1px black solid;
    
@@ -31,11 +29,21 @@ header {
 
 header nav {
  padding: 1rem 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 }
 
 a {
     color: var(--main-blue-color);
     text-decoration: none;
+}
+
+nav button {
+   background-image: linear-gradient(to left, var(--main-blue-color), rgb(243, 217, 169));
+   padding: 1rem;
+   border: none;
+   border-radius: 2px;
 }
 
 
@@ -127,7 +135,7 @@ form input[type="submit"] {
 .dark {
     background-color: rgb(28, 28, 28);
     color: rgb(202, 202, 202);
-    transition: 1s ease-in-out;
+    
     
 }
 

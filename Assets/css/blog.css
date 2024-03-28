@@ -65,7 +65,7 @@ a {
     border-radius: 3px;
   }
   
-  /* Friends Page */
+  /* Blog Page */
   ul li {
     border: 1px solid #eee;
     border-radius: 2px;
@@ -100,13 +100,8 @@ a {
     border: 1px solid #ddd;
   }
   
-  form button {
-    font-size: 1.3rem;
-    font-weight: 300;
-    background-color: #33bc6b;
-    color: #fff;
-  }
   
+  /* FOOTER */
   
   footer {
     padding: 25px 0;

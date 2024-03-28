@@ -9,9 +9,17 @@ function submitPost(postObj) {
 postObj.preventDefault()
 
 
+
 const usernameValue = formOutput.name.value
 const titleValue = formOutput.title.value
 const messageValue = formOutput.message.value
+
+
+if (!usernameValue || !titleValue || !messageValue) {
+    alert('Please fill out all fields')
+    return;
+}
+
 
 // - Store the input value from our name input (what they typed into the box)
 
@@ -32,6 +40,7 @@ localStorage.setItem('form', JSON.stringify(formArray))
 
 window.location = 'blog.html'
 }
+
 
 
 function init() {
