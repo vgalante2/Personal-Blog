@@ -12,7 +12,7 @@ a lightweight and easy-to-use web application designed for writers and bloggers 
 
 ## Deployment
 
-Provided as a link here - [Module 01](Your_REPO_LINK)
+([LIVE_LINK](https://vgalante2.github.io/Personal-Blog/))
 
 ## Usage
 
