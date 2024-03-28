@@ -1,0 +1,120 @@
+:root {
+  --main-blue-color: #3498db;
+}
+
+
+a {
+  color: var(--main-blue-color);
+  text-decoration: none;
+}
+
+
+
+.row, .column {
+    display: flex;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .align-center {
+    align-items: flex-start;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  /* CUSTOM STYLES */
+  header {
+    padding: 8px 0;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  header nav a:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  main > h1 {
+    margin: 20px 0;
+  }
+  
+  /* Home Page */
+  .start-now-btn {
+    margin-top: 25px;
+    background-color: #25bd6b;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+  }
+  
+  /* Blog Page */
+  ul li {
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  ul li button {
+    margin-left: 20px;
+    padding: 8px 10px;
+    background-color: #d73552; 
+    color: #fff;
+  }
+  
+  /* Form Page */
+  form {
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  form * {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+  }
+  
+  form input {
+    border: 1px solid #ddd;
+  }
+  
+  
+  /* FOOTER */
+  
+  footer {
+    padding: 25px 0;
+  }
+  
+  
+  /* RESPONSIVE STYLES */
+
+
+
+.dark {
+  background-color: rgb(28, 28, 28);
+  color: rgb(202, 202, 202);
+
+  
+}
